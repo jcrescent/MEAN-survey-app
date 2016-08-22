@@ -1,0 +1,26 @@
+{
+  "name": "Survey",
+  "description": "survey app witb the mean stack",
+  "main": "server.js",
+  "authors": [
+    "Jacob Crescent <jacobcrescent@gmail.com>"
+  ],
+  "license": "none",
+  "keywords": [
+    "MEAN"
+  ],
+  "homepage": "https://github.com/jcrescent/MEAN-survey-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-cookies": "^1.5.8"
+  }
+}
