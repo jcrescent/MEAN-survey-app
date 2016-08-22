@@ -1,0 +1,16 @@
+<h3>Add a new survey question!</h3>
+<a href="#/dashboard">Cancel</a>
+<hr>
+<form ng-submit="addNewQuestion()">
+	Question: <input type="text" ng-model="newQuestion.name">
+	<p style="color:red;">{{errors.name.message}}</p>
+	Option 1: <input type="text" ng-model="newQuestion.option1.name">
+	<p style="color:red;">{{errors.option1.message}}</p>
+	Option 2: <input type="text" ng-model="newQuestion.option2.name">
+	<p style="color:red;">{{errors.option2.message}}</p>
+	Option 3: <input type="text" ng-model="newQuestion.option3.name">
+	<p style="color:red;">{{errors.option3.message}}</p>
+	Option 4: <input type="text" ng-model="newQuestion.option4.name">
+	<p style="color:red;">{{errors.option4.message}}</p>
+	<input type="submit" value="Create Poll">
+</form>
