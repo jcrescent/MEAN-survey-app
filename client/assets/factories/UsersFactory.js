@@ -43,7 +43,7 @@ function UsersFactory(){
 		})
 	}
 	this.removeQuestion =function(question, callback){
-		$http.post(`/remove/${question}`).then(function(results){
+		$http.post('/remove', question).then(function(results){
 			callback(results.data)
 		})
 	}

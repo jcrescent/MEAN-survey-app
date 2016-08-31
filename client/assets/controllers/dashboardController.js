@@ -9,6 +9,7 @@ app.controller('dashboardController', ['$scope', 'UsersFactory', '$location', '$
 		})
 	}
 	$scope.allQuestions()
+
 	$scope.delete = function(question){
 		console.log(question)
 		UsersFactory.removeQuestion(question, function(results){

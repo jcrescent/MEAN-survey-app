@@ -13,6 +13,6 @@
 			<td>{{question._user.name}}</td>
 			<td><a href="#/poll/{{question._id}}">{{question.name}}</a></td>
 			<td>{{question.createdAt|date: "hh:mm a MM/dd/yyyy"}}</td>
-			<td><button ng-click="delete(question)">Delete<button></td>
+			<td ng-if = "question._user._id == user._id"><button ng-click="delete(question)">Delete</button></td>
 	</tbody>
 </table>
