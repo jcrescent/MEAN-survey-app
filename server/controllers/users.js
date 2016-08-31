@@ -107,15 +107,18 @@ function UsersController(){
 				}else{
 					res.send()
 				}
-			})
-		})
+			});
+		});
 	}
 	this.remove = function(req, res){
-		Questions.remove({_id: req.params.question}, function(err){
+		Questions.remove({_id: req.body._id}, function(err){
 			if(err){
+				console.log(err)
 				console.log("failed to delete")
+			}else{
+				res.send();
 			}
-		})
+		});
 	}
 }
 module.exports = new UsersController();

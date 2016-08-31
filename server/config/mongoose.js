@@ -10,7 +10,7 @@ var mongoose=require('mongoose'),
 
     reg= new RegExp( ".js$", "i" ),
 
-    dbURI= 'mongodb://localhost/survey';
+    dbURI= 'mongodb://localhost/newSurvey';
 
 mongoose.connect( dbURI );
 

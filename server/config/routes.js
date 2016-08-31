@@ -8,6 +8,6 @@ module.exports = function(app){
 	app.post('/add_vote2', users.add_vote2);
 	app.post('/add_vote3', users.add_vote3);
 	app.post('/add_vote4', users.add_vote4);
-	app.post('/remove/:question', users.remove);
+	app.post('/remove', users.remove);
 }
 
